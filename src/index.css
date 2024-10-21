@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .align-elements {
+    @apply max-w-7xl mx-auto px-5;
+  }
+}
+
+/* fonts */
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* fonts */
+
+/* Modal uchun kirish animatsiyasi */
+@keyframes modalFadeIn {
+  from {
+    transform: translateY(-100vh);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Modal ochilishida qo'llaniladigan sinf */
+.animate-modal {
+  animation: modalFadeIn 0.3s ease-out forwards;
+}
